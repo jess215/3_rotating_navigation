@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
 
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'DM Sans', sans-serif;
     background-color: #1d2938;
     color: #222;
     overflow-x: hidden;
@@ -41,6 +41,7 @@ body {
 }
 
 .circle button {
+    cursor: pointer;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -53,4 +54,18 @@ body {
 
 .circle button:focus {
     outline: none;
+}
+
+.circle button#open {
+    left: 60%;
+}
+
+.circle button#close {
+    top: 60%;
+    transform: rotate(90deg);
+    transform-origin: top left;
+}
+
+.content img {
+    max-width: 100%;
 }
